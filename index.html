@@ -3,16 +3,10 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-   <title>Titliaan (Pata Nahi Ji Konsa Nasha Karta Hai) Lyrics - Afsana Khan | Hardy Sandhu | Lyric Station</title>
+   <title></title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-	<style>
-	.Follow-Us{
-	margin-left: 70%;
-	margin-top: -7%;
-}
-	</style>
+    <script src="kit.js"></script>
   </head>
   <body>
   
@@ -23,20 +17,18 @@
 <span class="fas fa-bars"></span></div>
 
 <div class="logo">
-<img src = "lyrics.png" width="70%"></div>
+<img src = "2.png" width="70%"></div>
 
 <div class="nav-items">
-<li><a href="https://mitansh8820.github.io/Lyric-Station/">Home</a></li>
-<li><a href="https://mitansh8820.github.io/About-Lyric-Station/">About</a></li>
-<li><a href="https://mitansh8820.github.io/Request-Lyrics-Lyric-Station/">Request Lyrics</a></li>
+<li><a href="home.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="request.html">Request Lyrics</a></li>
 </div>
-<div class="search-icon">
-<span class="fas fa-search"></span></div>
 <div class="cancel-icon">
 <span class="fas fa-times"></span></div>
 	  </nav>
 	  <script async src="https://cse.google.com/cse.js?cx=2a93c96138bfa01e9"></script>
-          <div class="gcse-search"></div>
+      <div class="gcse-search"></div>
 
    <!-- NAV BAR DESIGN ENDS HERE -->
    
@@ -70,7 +62,7 @@
 	<a href="https://www.instagram.com/innocent_mitti/"><img src="insta.png" class= "in"></a>
 	<a href="mailto:legendaryuser.227@gmail.com"><img src="gmail.png" class= "gmail"></a>
 	</div>
-  
+  <div class="all-titli">
   <div class="titli-pic">
     <img src="titliaan-lyrics.jpg">
   </div>
@@ -161,10 +153,29 @@
 	Starring:&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Harrdy Sandhu, Sargun<br><br> &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp Mehta<br>
 	<hr width="40%"></hr><br>
   </div>
+  </div>
+  
+  <script>
+    const menuBtn = document.querySelector(".menu-icon span");
+    const cancelBtn = document.querySelector(".cancel-icon");
+    const items = document.querySelector(".nav-items");
+    const form = document.querySelector("form");
+    menuBtn.onclick = ()=>{
+      items.classList.add("active");
+      menuBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+    cancelBtn.onclick = ()=>{
+      items.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      form.classList.remove("active");
+    }
+  </script>
+  
 </body>
 </html>
    
    
    
    
-
