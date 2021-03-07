@@ -564,7 +564,7 @@ textarea {
 }
 @media (max-width: 360px){
 	.titli-pic img{
-	width: 350px;
+	width: 300px;
 	margin-left: -75px;
 	}
 	.titliaan-heading hr{
@@ -582,7 +582,7 @@ textarea {
 	.in{
 		margin-right: 20px;
 	}
-	@media (max-width: 360px){
+	@media (max-width: 350px){
 	.girl{
 		margin-right: 10px;
 	}
